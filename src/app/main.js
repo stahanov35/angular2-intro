@@ -12,32 +12,63 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var platform_browser_dynamic_1 = require('@angular/platform-browser-dynamic');
 /**
- * App Component
+ * Form Component
  */
-var App = (function () {
-    function App() {
-        this.text = "Hello world";
+var FormArticleComponent = (function () {
+    function FormArticleComponent() {
     }
-    App = __decorate([
+    FormArticleComponent = __decorate([
+        core_1.Component({
+            selector: 'form-article',
+            templateUrl: './src/app/form-article.component.html',
+            styleUrls: ['./src/app/form-article.component.css']
+        }), 
+        __metadata('design:paramtypes', [])
+    ], FormArticleComponent);
+    return FormArticleComponent;
+}());
+/**
+ * Header Component
+ */
+var HeaderComponent = (function () {
+    function HeaderComponent() {
+    }
+    HeaderComponent = __decorate([
+        core_1.Component({
+            selector: 'header-app',
+            templateUrl: './src/app/header.component.html'
+        }), 
+        __metadata('design:paramtypes', [])
+    ], HeaderComponent);
+    return HeaderComponent;
+}());
+/**
+ * App component
+ * Top level component
+ */
+var AppComponent = (function () {
+    function AppComponent() {
+    }
+    AppComponent = __decorate([
         core_1.Component({
             selector: 'app',
             templateUrl: './src/app/app.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], App);
-    return App;
+    ], AppComponent);
+    return AppComponent;
 }());
 /**
- * Module
+ * App Module
  */
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            declarations: [App],
+            declarations: [AppComponent, FormArticleComponent, HeaderComponent],
             imports: [platform_browser_1.BrowserModule],
-            bootstrap: [App]
+            bootstrap: [AppComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);
