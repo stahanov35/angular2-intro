@@ -11,22 +11,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var platform_browser_dynamic_1 = require('@angular/platform-browser-dynamic');
-/**
- * Form Component
- */
-var FormArticleComponent = (function () {
-    function FormArticleComponent() {
-    }
-    FormArticleComponent = __decorate([
-        core_1.Component({
-            selector: 'form-article',
-            templateUrl: './src/app/form-article.component.html',
-            styleUrls: ['./src/app/form-article.component.css']
-        }), 
-        __metadata('design:paramtypes', [])
-    ], FormArticleComponent);
-    return FormArticleComponent;
-}());
+var article_component_1 = require('./article/article.component');
+var form_component_1 = require('./form/form.component');
 /**
  * Header Component
  */
@@ -66,7 +52,7 @@ var AppModule = (function () {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            declarations: [AppComponent, FormArticleComponent, HeaderComponent],
+            declarations: [AppComponent, article_component_1.ArticleComponent, form_component_1.FormArticleComponent, HeaderComponent],
             imports: [platform_browser_1.BrowserModule],
             bootstrap: [AppComponent]
         }), 

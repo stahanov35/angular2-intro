@@ -1,20 +1,15 @@
-import { NgModule, Component, ViewEncapsulation } from '@angular/core';
+import {
+    NgModule,
+    Component,
+    ViewEncapsulation,
+    OnInit,
+    Injectable
+} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-/**
- * Form Component
- */
-@Component({
-    selector: 'form-article',
-    templateUrl: './src/app/form-article.component.html',
-    styleUrls: ['./src/app/form-article.component.css']
-})
-
-class FormArticleComponent {
-    constructor(){
-    }
-}
+import { ArticleComponent } from './article/article.component';
+import { FormArticleComponent } from './form/form.component';
 
 /**
  * Header Component
@@ -25,9 +20,7 @@ class FormArticleComponent {
 })
 
 class HeaderComponent {
-    constructor(){
-
-    }
+    constructor(){}
 }
 
 /**
@@ -37,7 +30,6 @@ class HeaderComponent {
 @Component({
     selector: 'app',
     templateUrl: './src/app/app.component.html'
-
 })
 
 class AppComponent {
@@ -48,7 +40,7 @@ class AppComponent {
  * App Module
  */
 @NgModule({
-    declarations: [AppComponent, FormArticleComponent, HeaderComponent],
+    declarations: [AppComponent, ArticleComponent, FormArticleComponent, HeaderComponent],
     imports: [BrowserModule],
     bootstrap: [AppComponent]
 })
