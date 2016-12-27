@@ -11,23 +11,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var platform_browser_dynamic_1 = require('@angular/platform-browser-dynamic');
-var article_component_1 = require('./article/article.component');
+var article_component_1 = require('./reddit-article/article/article.component');
+var reddit_article_component_1 = require('./reddit-article/reddit-article.component');
 var form_component_1 = require('./form/form.component');
-/**
- * Header Component
- */
-var HeaderComponent = (function () {
-    function HeaderComponent() {
-    }
-    HeaderComponent = __decorate([
-        core_1.Component({
-            selector: 'header-app',
-            templateUrl: './src/app/header.component.html'
-        }), 
-        __metadata('design:paramtypes', [])
-    ], HeaderComponent);
-    return HeaderComponent;
-}());
+var header_component_1 = require('./header/header.component');
 /**
  * App component
  * Top level component
@@ -52,7 +39,7 @@ var AppModule = (function () {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            declarations: [AppComponent, article_component_1.ArticleComponent, form_component_1.FormArticleComponent, HeaderComponent],
+            declarations: [AppComponent, article_component_1.ArticleComponent, form_component_1.FormArticleComponent, header_component_1.HeaderComponent, reddit_article_component_1.RedditArticleComponent],
             imports: [platform_browser_1.BrowserModule],
             bootstrap: [AppComponent]
         }), 

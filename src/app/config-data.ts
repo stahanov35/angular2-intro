@@ -13,6 +13,12 @@ let data =  {
             "point": 10,
             "title": "TypeScript",
             "link": "http://www.typescriptlang.org/"
+        },
+        {
+            "id": "3",
+            "point": 5,
+            "title": "ES6",
+            "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes"
         }
     ]
 }

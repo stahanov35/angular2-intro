@@ -8,20 +8,10 @@ import {
 import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { ArticleComponent } from './article/article.component';
+import { ArticleComponent } from './reddit-article/article/article.component';
+import { RedditArticleComponent } from './reddit-article/reddit-article.component';
 import { FormArticleComponent } from './form/form.component';
-
-/**
- * Header Component
- */
-@Component({
-    selector: 'header-app',
-    templateUrl: './src/app/header.component.html'
-})
-
-class HeaderComponent {
-    constructor(){}
-}
+import { HeaderComponent } from './header/header.component';
 
 /**
  * App component
@@ -40,7 +30,7 @@ class AppComponent {
  * App Module
  */
 @NgModule({
-    declarations: [AppComponent, ArticleComponent, FormArticleComponent, HeaderComponent],
+    declarations: [AppComponent, ArticleComponent, FormArticleComponent, HeaderComponent, RedditArticleComponent],
     imports: [BrowserModule],
     bootstrap: [AppComponent]
 })

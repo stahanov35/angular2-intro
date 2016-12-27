@@ -51,4 +51,4 @@ var ArticleComponent = (function () {
     return ArticleComponent;
 }());
 exports.ArticleComponent = ArticleComponent;
-//# sourceMappingURL=article.component.js.map
+//# sourceMappingURL=redditj-article.component.js.map
